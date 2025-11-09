@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standing Desks Ltd - Professional Standing Desks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Standing<span>Desks</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rising-desks.html">Rising Desks</a></li>
+                    <li><a href="health-benefits.html">Health Benefits</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="basket.html">Basket (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Elevate Your Workspace, Enhance Your Health</h1>
+            <p>Discover our premium range of ergonomic standing desks designed for productivity and wellbeing.</p>
+            <a href="rising-desks.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section style="background-color: var(--secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Products</h2>
+                <p>Our most popular standing desks and accessories</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image" data-image="pro-desk"></div>
+                    <div class="product-info">
+                        <h3>Pro Series Standing Desk</h3>
+                        <p>Advanced height memory, anti-collision system, and whisper-quiet operation.</p>
+                        <span class="price">£499</span>
+                        <button class="btn" onclick="addToBasket('Pro Series Desk', 499)" style="width: 100%;">Add to Basket</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" data-image="essential-desk"></div>
+                    <div class="product-info">
+                        <h3>Essential Standing Desk</h3>
+                        <p>Reliable and affordable solution for home offices and small spaces.</p>
+                        <span class="price">£299</span>
+                        <button class="btn" onclick="addToBasket('Essential Desk', 299)" style="width: 100%;">Add to Basket</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" data-image="desk-converter"></div>
+                    <div class="product-info">
+                        <h3>Desktop Converter</h3>
+                        <p>Transform your existing desk into a standing workstation in seconds.</p>
+                        <span class="price">£149</span>
+                        <button class="btn" onclick="addToBasket('Desktop Converter', 149)" style="width: 100%;">Add to Basket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Benefits -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Standing Desks?</h2>
+                <p>Discover the health benefits of standing while you work</p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="health-benefits.html" class="btn">Learn More About Health Benefits</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Standing Desks Ltd</h3>
+                    <p>Providing ergonomic workspace solutions since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><span>f</span></a>
+                        <a href="#"><span>t</span></a>
+                        <a href="#"><span>in</span></a>
+                        <a href="#"><span>ig</span></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rising-desks.html">Rising Desks</a></li>
+                        <li><a href="health-benefits.html">Health Benefits</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="basket.html">Basket</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Assembly Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>123 Ergonomics Street</li>
+                        <li>London, UK</li>
+                        <li>info@standingdesksltd.com</li>
+                        <li>+44 20 1234 5678</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Standing Desks Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple basket functionality
+        function addToBasket(productName, price) {
+            alert(productName + ' added to basket!');
+            // In full version, this would update basket count
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rising Desks - Standing Desks Ltd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">Standing<span>Desks</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rising-desks.html">Rising Desks</a></li>
+                    <li><a href="health-benefits.html">Health Benefits</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="basket.html">Basket (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 40vh;">
+        <div class="container hero-content">
+            <h1>Rising Desks</h1>
+            <p>Explore our complete range of standing desks and accessories</p>
+        </div>
+    </section>
+
+    <!-- Desk Frames -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Desk Frames</h2>
+                <p>Choose from our range of premium standing desk frames</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image" data-image="pro-desk"></div>
+                    <div class="product-info">
+                        <h3>Pro Series Standing Desk</h3>
+                        <p>Advanced height memory, anti-collision system, and whisper-quiet operation.</p>
+                        <span class="price">£499</span>
+                        <button class="btn" onclick="addToBasket('Pro Series Desk', 499)" style="width: 100%;">Add to Basket</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" data-image="essential-desk"></div>
+                    <div class="product-info">
+                        <h3>Essential Standing Desk</h3>
+                        <p>Reliable and affordable solution for home offices and small spaces.</p>
+                        <span class="price">£299</span>
+                        <button class="btn" onclick="addToBasket('Essential Desk', 299)" style="width: 100%;">Add to Basket</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" data-image="executive-desk"></div>
+                    <div class="product-info">
+                        <h3>Executive Standing Desk</h3>
+                        <p>Premium materials and advanced features for executive offices.</p>
+                        <span class="price">£699</span>
+                        <button class="btn" onclick="addToBasket('Executive Desk', 699)" style="width: 100%;">Add to Basket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desk Tops -->
+    <section style="background-color: var(--secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Desk Tops</h2>
+                <p>Customize your standing desk with our premium desktop options</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image" data-image="bamboo-top"></div>
+                    <div class="product-info">
+                        <h3>Bamboo Desktop</h3>
+                        <p>Sustainable bamboo desktop with natural finish and durability.</p>
+                        <span class="price">£149</span>
+                        <button class="btn" onclick="addToBasket('Bamboo Desktop', 149)" style="width: 100%;">Add to Basket</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" data-image="wood-top"></div>
+                    <div class="product-info">
+                        <h3>Solid Wood Desktop</h3>
+                        <p>Premium solid wood desktop with elegant finish and character.</p>
+                        <span class="price">£199</span>
+                        <button class="btn" onclick="addToBasket('Solid Wood Desktop', 199)" style="width: 100%;">Add to Basket</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" data-image="laminate-top"></div>
+                    <div class="product-info">
+                        <h3>Laminate Desktop</h3>
+                        <p>Durable laminate desktop available in various colors and finishes.</p>
+                        <span class="price">£99</span>
+                        <button class="btn" onclick="addToBasket('Laminate Desktop', 99)" style="width: 100%;">Add to Basket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Standing Desks Ltd</h3>
+                    <p>Providing ergonomic workspace solutions since 2015.</p>
+                    <div class="social-links">
+                        <a href="#"><span>f</span></a>
+                        <a href="#"><span>t</span></a>
+                        <a href="#"><span>in</span></a>
+                        <a href="#"><span>ig</span></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rising-desks.html">Rising Desks</a></li>
+                        <li><a href="health-benefits.html">Health Benefits</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="basket.html">Basket</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Assembly Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>123 Ergonomics Street</li>
+                        <li>London, UK</li>
+                        <li>info@standingdesksltd.com</li>
+                        <li>+44 20 1234 5678</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 Standing Desks Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function addToBasket(productName, price) {
+            alert(productName + ' added to basket!');
+        }
+    </script>
+</body>
+</html>

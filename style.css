@@ -1,0 +1,291 @@
+/* Global Styles - Black Theme */
+:root {
+    --primary: #1a1a1a;
+    --secondary: #2d2d2d;
+    --accent: #00b894;
+    --accent-dark: #00a085;
+    --text: #e0e0e0;
+    --text-light: #b0b0b0;
+    --border: #404040;
+    --shadow: rgba(0, 0, 0, 0.5);
+    --success: #00b894;
+    --error: #ff6b6b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--secondary);
+    box-shadow: 0 2px 10px var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.logo span {
+    color: var(--text);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 25px;
+}
+
+nav a {
+    color: var(--text);
+    font-weight: 500;
+    padding: 8px 0;
+    display: block;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), #333;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px var(--shadow);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--accent-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.product-card {
+    background-color: var(--secondary);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px var(--shadow);
+}
+
+.product-image {
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Product Images */
+.product-image[data-image="pro-desk"] { background-image: url('images/pro-series-desk.jpg'); }
+.product-image[data-image="essential-desk"] { background-image: url('images/essential-desk.jpg'); }
+.product-image[data-image="executive-desk"] { background-image: url('images/executive-desk.jpg'); }
+.product-image[data-image="bamboo-top"] { background-image: url('images/bamboo-top.jpg'); }
+.product-image[data-image="wood-top"] { background-image: url('images/wood-top.jpg'); }
+.product-image[data-image="laminate-top"] { background-image: url('images/laminate-top.jpg'); }
+.product-image[data-image="desk-converter"] { background-image: url('images/desk-convertor.jpg'); }
+.product-image[data-image="anti-fatigue-mat"] { background-image: url('images/anti-fatigue-desk.jpg'); }
+.product-image[data-image="cable-kit"] { background-image: url('images/cable-kit.jpg'); }
+.product-image[data-image="monitor-arm"] { background-image: url('images/monitor-arm.jpg'); }
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--accent);
+    display: block;
+    margin: 15px 0;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary);
+    padding: 60px 0 30px;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h3 {
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: var(--text-light);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    color: var(--text);
+    transition: all 0.3s;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid var(--border);
+    color: var(--text-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+    
+    nav li {
+        margin: 10px 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
